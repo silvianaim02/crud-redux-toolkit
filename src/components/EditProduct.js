@@ -24,7 +24,7 @@ const EditProduct = () => {
         if(product){
             setTitle(product.title);
             setPrice(product.price);
-            setPrice(product.Image);
+            setImage(product.Image);
         }
     }, [product])
 
