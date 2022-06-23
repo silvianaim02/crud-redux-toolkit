@@ -1,0 +1,33 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import { store } from './app/store';
+import { Provider } from 'react-redux';
+import "bulma/css/bulma.css";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+      <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// import React from 'react';
+// import App from './App';
+// import { store } from './app/store';
+// import { Provider } from 'react-redux';
+// import "bulma/css/bulma.css";
+// import { createRoot } from 'react-dom/client';
+
+// const container = document.getElementById('root');
+// const root = createRoot(container); 
+
+// root.render(
+//   <React.StrictMode>
+//     <Provider store={store}>
+//       <App />
+//     </Provider>
+//   </React.StrictMode>
+// );
